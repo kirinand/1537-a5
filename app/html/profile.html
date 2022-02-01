@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/profile-styles.css">
+</head>
+<body>
+
+  <div id="content">
+    <div id="banner">
+      <span id="pageTitle"></span>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Tickets</a></li>
+          <li id="buttonDiv">
+            <form action="/logout" method="get">
+              <input class="button" type="submit" value="Logout"/>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div id="userInfo" class="block">
+      <p id="infoTitle" class="blockTitle">Profile</p>
+      <div id="name"></div>
+      <div id="email"></div>
+      <div id="password"></div>
+      <div id="favourite"></div>
+      <div id="watched"></div>
+      <div id="viptype"></div>
+    </div>
+  
+    <div id="showlist" class="block">
+      <p id="showlistTitle" class="blockTitle">Show List</p>
+      <div id="showlistContent"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

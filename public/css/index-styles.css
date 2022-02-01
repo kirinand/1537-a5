@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/font/Montserrat-Regular.ttf');
+}
+
+body {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: url("/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#loginPanel {
+  width: 500px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 17px black;
+  justify-self: center;
+  align-self: center;
+  backdrop-filter: blur(7px);
+  padding: 1em;
+}
+
+#loginPanel input {
+  width: 60%;
+  height: 2.5em;
+  display: block;
+  margin: 0 auto;
+	box-sizing: border-box;
+	margin-bottom: 1.3em;
+  padding-left: 0.5em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inputbox {
+  outline: none;
+  border:none;
+  color: #333;
+  background-color: lightgray;
+}
+
+.button {
+  background-color: transparent;
+  color:lightgray;
+  font-weight: bold;
+  border: 2px solid lightgray;
+}
+
+.button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.button:active {
+  color: black;
+  background-color: lightgray;
+  border-color: lightgray;
+  transform: translateY(1px);
+}
+
+#loginTitle {
+  color: lightgray;
+	font-size: 30pt;
+  text-align: center;
+	padding-bottom: 0.3em;
+}
+
+#errorMsg {
+  color: #ff9d00;
+  text-align: center;
+  font-size: 1.2em;
+}
